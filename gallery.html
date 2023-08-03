@@ -1,28 +1,30 @@
 ---
 layout: default
+popup-gallery: true
+gallery-background: Dark Background
 gallery:
-   -
-      column-size: col-12
+
+    - column-size: col-6
       aspect-ratio: square
       image: https://source.unsplash.com/3lGi0BXJ1W0
-   -
-      column-size: col-12
+
+    - column-size: col-6
       aspect-ratio: square
       image: https://source.unsplash.com/vUNQaTtZeOo
-   -
-      column-size: col-12
+
+    - column-size: col-6
       aspect-ratio: portrait
       image: https://source.unsplash.com/OlKkCmToXEs
-   -
-      column-size: col-12
+
+    - column-size: col-6
       aspect-ratio: portrait
       image: https://source.unsplash.com/dJb4w5hy0OA
-   -
-      column-size: col-12
+
+    - column-size: col-12
       aspect-ratio: portrait
       image: https://source.unsplash.com/25JxltstHSc
-   -
-      column-size: col-12
+
+    - column-size: col-12
       aspect-ratio: landscape
       image: https://source.unsplash.com/RvHCxzl6wSM
 ---
@@ -39,15 +41,18 @@ gallery:
         </div> 
     </header>
 
-    <div class="gallery grid padded" id="lightgallery">
-        {% for item in page.gallery %}
-        <a class="{{item.column-size}}" href="{{item.image}}">
-          <div class="bg-image {{item.aspect-ratio}}" style="background-image:url('{{item.image}}')">
+    {% if page.popup-gallery == true %}
+    <section class="padded {% if page.gallery-background == 'Dark Background'%} bg-dark {% endif %}">
+        <div class="gallery grid padded" id="lightgallery">
+            {% for item in page.gallery %}
+            <a class="{{item.column-size}}" href="{{item.image}}">
+            <div class="bg-image {{item.aspect-ratio}}" style="background-image:url('{{item.image}}')">
+            </div>
+            </a>
+            {% endfor %}
         </div>
-        </a>
-        {% endfor %}
-    </div>
-
+    </section>
+    {% endif %}
 
     <!-- <div class="gallery grid padded">
         {% for item in page.gallery %}
