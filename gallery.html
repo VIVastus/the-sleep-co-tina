@@ -39,15 +39,24 @@ gallery:
         </div> 
     </header>
 
+    <div class="gallery grid padded" id="lightgallery">
+        {% for item in page.gallery %}
+        <a class="{{item.column-size}}" href="{{item.image}}">
+          <div class="bg-image {{item.aspect-ratio}}" style="background-image:url('{{item.image}}')">
+        </div>
+        </a>
+        {% endfor %}
+    </div>
 
-    <div class="gallery grid padded">
+
+    <!-- <div class="gallery grid padded">
         {% for item in page.gallery %}
         <div class="{{item.column-size}}">
           <div class="bg-image {{item.aspect-ratio}}" style="background-image:url('{{item.image}}')">
         </div>
         </div>
         {% endfor %}
-    </div>
+    </div> -->
 
 
 <!-- 

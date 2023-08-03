@@ -168,6 +168,10 @@ a:hover {
     color: #FFBE00;
 }
 
+.gallery a{
+    border-bottom:none;
+}
+
 .font-weight-light { font-weight: 200; }
 .font-weight-normal { font-weight: normal; }
 .font-weight-extra-bold { font-weight: 800; }
@@ -287,7 +291,13 @@ textarea:focus {
 .bg-img-6{background-image:url("https://source.unsplash.com/RvHCxzl6wSM");}
 
 
+.lg-backdrop {
+    background-color: rgb(20,20,20);
+}
 
+.lg-backdrop.in {
+    opacity: 0.95;
+}
 
 
 /* Mobile Menu Styles */
