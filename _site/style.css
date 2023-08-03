@@ -92,15 +92,43 @@
 .bg-light {  background-color: #E3ECF2; }
 
 /* Image Styles */
-.bg-image {
-    background-image: url('/images/the-sleep-co-original1.jpg');
+.bg-image{
+    background-color: rgb(240,240,240);
+    background-image:url("https://source.unsplash.com/vrCvV2iNi1k");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-}
+    padding-bottom:20%;
+   
+ }
 
-.landscape { padding-bottom: 65%;}
-.portrait { padding-bottom: 125%;}
-.square   { padding-bottom: 100%;}
+.portrait-tall {padding-bottom: 175%;}
+  
+  .portrait {padding-bottom: 136%;}
+  
+  .square {padding-bottom: 100%;}
+  
+  .landscape {padding-bottom: 66%;}
+  
+  .landscape-wide {padding-bottom: 56%;}
+
+
+
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+/* Background Position */
+.bg-pos-t-l { background-position: left top; }
+.bg-pos-b-r { background-position: right bottom; }
+
+
+/* Background Position */
+.bg-pos-t-l { background-position: 10% 10%; }
+.bg-pos-b-r { background-position: 85% 85%; }
 
 
 /*  Typography Styles  --------------------  */
@@ -249,6 +277,18 @@ textarea:focus {
     color: rgb(120,120,125);
     line-height: 1;
 }
+
+/* Gallery Styles */
+.bg-img-1{background-image:url("https://source.unsplash.com/3lGi0BXJ1W0");}
+.bg-img-2{background-image:url("https://source.unsplash.com/vUNQaTtZeOo");}
+.bg-img-3{background-image:url("https://source.unsplash.com/OlKkCmToXEs");}
+.bg-img-4{background-image:url("https://source.unsplash.com/dJb4w5hy0OA");}
+.bg-img-5{background-image:url("https://source.unsplash.com/25JxltstHSc");}
+.bg-img-6{background-image:url("https://source.unsplash.com/RvHCxzl6wSM");}
+
+
+
+
 
 /* Mobile Menu Styles */
 

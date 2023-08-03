@@ -1,0 +1,75 @@
+---
+layout: default
+gallery:
+ - column-size: col-6
+   aspect-ratio: square
+   image: https://source.unsplash.com/3lGi0BXJ1W0
+ - column-size: col-6
+   aspect-ratio: square
+   image: https://source.unsplash.com/vUNQaTtZeOo
+ - column-size: col-4
+   aspect-ratio: portrait
+   image: https://source.unsplash.com/OlKkCmToXEs
+ - column-size: col-4
+   aspect-ratio: portrait
+   image: https://source.unsplash.com/dJb4w5hy0OA
+ - column-size: col-4
+   aspect-ratio: portrait
+   image: https://source.unsplash.com/25JxltstHSc
+ - column-size: col-12
+   aspect-ratio: landscape
+   image: https://source.unsplash.com/RvHCxzl6wSM
+
+---
+
+
+
+    <!--------------- Header Banner ------------------->
+    <header class="grid  tall-100 md-tall-80"> 
+        {% include header-nav.html %}
+        <div class="col-12-middle text-center"> 
+            <h3 class="font-weight-extra-bold editable">
+                <span class="featured-text"> sleep</span> like a baby
+            </h3>
+            <h1 class="font-weight-light editable">
+                the ultimate mattress solution
+            </h1> 
+        </div> 
+    </header>
+
+
+    <div class="gallery grid padded">
+        {% for item in page.gallery %}
+        <div class="{{item.column-size}}">
+          <div class="bg-image {{item.aspect-ratio}}" 
+          style="background-image:url('{{item.image}}')">
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+<!-- 
+    <section>
+        <div class="gallery grid">
+            <div class="col-4_">
+              <div class="bg-image portrait  bg-img-6"></div>
+            </div>
+            <div class="col-8  ">
+              <div class="bg-image bg-img-4 landscape"></div>
+            </div>
+          
+            <div class="col-6">
+              <div class="bg-image square bg-img-1"></div>
+            </div>
+            <div class="col-6">
+              <div class="bg-image square bg-img-2"></div>
+            </div>
+            <div class="col-4_xs-12">
+              <div class="bg-image portrait bg-img-3"></div>
+            </div>
+            <div class="col-4_xs-12">
+              <div class="bg-image portrait bg-img-5"></div>
+            </div>
+          </div>
+    </section> -->
