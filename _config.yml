@@ -14,5 +14,5 @@ _select_data:
     col-4: One Third
     col-3: One Quarter
     col-6_sm-12: One Half(Responsive)
-    col-6_sm-12: One Half(Responsive)
-    col-6_sm-12: One Half(Responsive)
+    col-4_sm-12: One Third(Responsive)
+    col-3_sm-12: One Quarter(Responsive)
